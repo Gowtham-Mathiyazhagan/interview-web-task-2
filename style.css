@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+
+.main-container {
+  max-height: 100vh;
+  max-width: 100vw;
+  background-color: #0240a2;
+}
+/* styling svg */
+.main-container .circle-nav {
+  /* height: 25rem;
+  width: 25rem; */
+  height: 18.75rem;
+  width: 18.75rem;
+  position: fixed;
+  top: 45px;
+  left: 27%;
+  z-index: 1;
+}
+
+.circle-nav svg {
+  border-radius: 50%;
+}
+svg.con1 {
+  background-color: #6b21a8 !important;
+}
+/* Message box */
+.msg-box {
+  height: 3rem;
+  width: 3rem;
+  background-color: #3b82f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  transition: all 0.1s ease-in;
+  z-index: 5;
+}
+.msg-box i {
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+}
+.msg-box:hover {
+  background-color: #0461f7;
+  transform: scale(1.1);
+}
+/* container one styling */
+.container-1 {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 42% 58%;
+}
+.left-side {
+  /* height: 100%;
+  width: 100%; */
+  position: relative;
+  background-color: #6b21a8;
+  color: rgb(255, 255, 255);
+  padding: 0 0 1.25rem 3.5625rem;
+}
+.primary-title {
+  position: absolute;
+  top: 11%;
+  left: 40%;
+  z-index: 2;
+}
+.primary-title > h1 {
+  font-size: 2.3rem;
+}
+.primary-title > p {
+  text-align: end;
+  font-weight: 300;
+}
+.left-side .award-img {
+  position: absolute;
+  top: 20%;
+}
+.award-img img {
+  height: 5rem;
+  width: 15rem;
+  opacity: 0.7;
+}
+.left-side .secondary-title {
+  width: 15rem;
+  position: absolute;
+  top: 26%;
+}
+.secondary-title h2 {
+  font-size: 1.7rem;
+}
+.secondary-title P {
+  font-weight: 300;
+  font-size: 0.7rem;
+}
+.left-side .footer {
+  width: 78%;
+  position: absolute;
+  top: 34%;
+  display: flex;
+  justify-content: space-between;
+}
+.container-1 .right-side {
+  /* height: 100%;
+  width: 100%; */
+  background-color: #d4d4d8;
+  position: relative;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+/* .img-section {
+  display: flex;
+  align-items: center;
+} */
+.right-side img {
+  height: 30rem;
+}
