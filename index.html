@@ -1,146 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
-  />
-</head>
-<body>
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
     <!-- viewBox="0 0 414 414" -->
     <div class="main-container">
-        <div class="circle-nav">
-            <svg class="con1" version="1.1" id="transring" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 414 414"
-            style="enable-background:new 0 0 414 414; background-color:lightblue" xml:space="preserve">
+      <div class="circle-nav">
+        <svg
+          class="con1"
+          version="1.1"
+          id="transring"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 414 414"
+          style="
+            enable-background: new 0 0 414 414;
+            background-color: lightblue;
+          "
+          xml:space="preserve"
+        >
+          <path
+            id="Transparent_Ring"
+            class="transrg"
+            style="
+              opacity: 0.4;
+              fill: none;
+              stroke: #ffffff;
+              stroke-width: 3;
+              stroke-miterlimit: 10;
+              enable-background: new;
+            "
+            d="M84.3,85c31.3-31.5,74.7-51,122.7-51c95.5,0,173,77.5,173,173s-77.5,173-173,173
+            c-47.8,0-91-19.4-122.3-50.7"
+          ></path>
 
-            <path id="Transparent_Ring" class="transrg"
-                style="opacity:0.4;fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;enable-background:new"
-                d="M84.2,85c31.3-31.5,74.7-51,122.7-51c95.5,0,173,77.5,173,173s-77.5,173-173,173
-            c-47.8,0-91-19.4-122.3-50.7"></path>
+          <path
+            id="Opaque_Ring"
+            class="transrgwht"
+            stroke-dasharray="0,1000"
+            style="
+              fill: none;
+              stroke: rgb(255, 255, 255);
+              stroke-width: 3;
+              stroke-miterlimit: 10;
+              stroke-dasharray: 10, 1000;
+            "
+            d="M84.3,85c31.3-31.5,74.7-51,122.7-51c95.5,0,173,77.5,173,173s-77.5,173-173,173
+            c-47.8,0-91-19.4-122.3-50.7"
+          ></path>
 
-            <path id="Opaque_Ring" class="transrgwht" stroke-dasharray="0,1000"
-                style="fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10; stroke-dasharray: 10, 1000;"
-                d="M84.2,85c31.3-31.5,74.7-51,122.7-51c95.5,0,173,77.5,173,173s-77.5,173-173,173
-            c-47.8,0-91-19.4-122.3-50.7"></path>
-
-            <g id="Dots1" class="dots-nav">
-                <g>
-                    <path class="dotsst dotsfill1" style="fill: rgb(0, 146, 255); opacity: 1;"
-                        d="M84,80 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 87, 80, 84,80 z"></path>
-                </g>
-                <g>
-                    <path class="dotsstro1"
-                        style="opacity: 1; fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;"
-                        d="M84,80c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 87, 80, 84,80 z"></path>
-                </g>
+          <g id="Dots1" class="dots-nav">
+            <g>
+              <path
+                class="dotsst dotsfill1"
+                style="fill: rgb(0, 146, 255); opacity: 1"
+                d="M84,80 c-3.3,0-6,3.7-6,6s2.7,6,6,6s6-3.7,6 -6 S 87, 80, 84,80 z"
+              ></path>
             </g>
-            <g id="Dots2" class="dots-nav">
-                <g>
-                    <path class="dotsst dotsfill2" style="fill: rgb(0, 146, 255); opacity: 1;"
-                        d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6S 210.1,29, 206.8,29 z M206.8"></path>
-                </g>
-                <g>
-                    <path class="dotsstro2"
-                        style="opacity: 1; fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;"
-                        d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6S 210.1,29, 206.8,29 z M206.8"></path>
-                </g>
+            <g>
+              <path
+                class="dotsstro1"
+                style="
+                  opacity: 1;
+                  fill: none;
+                  stroke: rgb(255, 255, 255);
+                  stroke-width: 3;
+                  stroke-miterlimit: 10;
+                "
+                d="M84,80c-3.3,0-6,3.7-6,6s2.7,6,6,6s6-3.7,6 -6 S 87, 80, 84,80 z"
+              ></path>
             </g>
-            <g id="Dots3" class="dots-nav">
-                <g>
-                    <path class="dotsst dotsfill3" style="fill: rgb(0, 146, 255); opacity: 1;"
-                        d="M332,85 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 335,85, 332,85 z M332"></path>
-                </g>
-                <g>
-                    <path class="dotsstro3"
-                        style="opacity: 1; fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;"
-                        d="M332,85 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 335,85, 332,85 z M332"></path>
-                </g>
+          </g>
+          <g id="Dots2" class="dots-nav">
+            <g>
+              <path
+                class="dotsst dotsfill2"
+                style="fill: rgb(0, 146, 255); opacity: 1"
+                d="M206.8,29c-3.3,0-6,3.7-6,6s2.7,6,6,6s6-3.7,6 -6S 210.1,29, 206.8,29 z M206.8"
+              ></path>
             </g>
-            <g id="Dots4" class="dots-nav">
-                <g>
-                    <path class="dotsst dotsfill4" style="fill: rgb(0, 146, 255); opacity: 1;"
-                        d="M380,205 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 383,205, 380,205 z M380"></path>
-                </g>
-                <g>
-                    <path class="dotsstro4"
-                        style="opacity: 1; fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;"
-                        d="M380,205 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 383,205, 380,205 z M380"></path>
-                </g>
+            <g>
+              <path
+                class="dotsstro2"
+                style="
+                  opacity: 1;
+                  fill: none;
+                  stroke: rgb(255, 255, 255);
+                  stroke-width: 3;
+                  stroke-miterlimit: 10;
+                "
+                d="M206.8,29c-3.3,0-6,3.7-6,6s2.7,6,6,6s6-3.7,6 -6S 210.1,29, 206.8,29 z M206.8"
+              ></path>
             </g>
-            <g id="Dots5" class="dots-nav">
-                <g>
-                    <path class="dotsst dotsfill5" style="fill: rgb(0, 146, 255); opacity: 1;"
-                        d="M335,315 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 340,315, 335,315 z M335"></path>
-                </g>
-                <g>
-                    <path class="dotsstro5"
-                        style="opacity: 1; fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;"
-                        d="M335,315 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 340,315, 335,315 z M335"></path>
-                </g>
+          </g>
+          <g id="Dots3" class="dots-nav">
+            <g>
+              <path
+                class="dotsst dotsfill3"
+                style="fill: rgb(0, 146, 255); opacity: 1"
+                d="M332,85 c-3.3,0-6,3.7-6,6s2.7,6,6,6s6-3.7,6 -6 S 335,85, 332,85 z M332"
+              ></path>
             </g>
-            <g id="Dots6" class="dots-nav">
-                <g>
-                    <path class="dotsst dotsfill6" style="fill: rgb(0, 146, 255); opacity: 1;"
-                        d="M210,375 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 215,375, 210,375 z M210"></path>
-                </g>
-                <g>
-                    <path class="dotsstro6"
-                        style="opacity: 1; fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;"
-                        d="M210,375 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 215,375, 210,375 z M210"></path>
-                </g>
+            <g>
+              <path
+                class="dotsstro3"
+                style="
+                  opacity: 1;
+                  fill: none;
+                  stroke: rgb(255, 255, 255);
+                  stroke-width: 3;
+                  stroke-miterlimit: 10;
+                "
+                d="M332,85 c-3.3,0-6,3.7-6,6s2.7,6,6,6s6-3.7,6 -6 S 335,85, 332,85 z M332"
+              ></path>
             </g>
-            <g id="Dots7" class="dots-nav">
-                <g>
-                    <path class="dotsst dotsfill7" style="fill: rgb(0, 146, 255); opacity: 1;"
-                        d="M88,324 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 92,324, 88,324 z M88"></path>
-                </g>
-                <g>
-                    <path class="dotsstro7"
-                        style="opacity: 1; fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;"
-                        d="M88,324 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 92,324, 88,324 z M88"></path>
-                </g>
+          </g>
+          <g id="Dots4" class="dots-nav">
+            <g>
+              <path
+                class="dotsst dotsfill4"
+                style="fill: rgb(0, 146, 255); opacity: 1"
+                d="M380,205 c-3.3,0-6,3.7-6,6s2.7,6,6,6s6-3.7,6 -6 S 383,205, 380,205 z M380"
+              ></path>
             </g>
+            <g>
+              <path
+                class="dotsstro4"
+                style="
+                  opacity: 1;
+                  fill: none;
+                  stroke: rgb(255, 255, 255);
+                  stroke-width: 3;
+                  stroke-miterlimit: 10;
+                "
+                d="M380,205 c-3.3,0-6,3.7-6,6s2.7,6,6,6s6-3.7,6 -6 S 383,205, 380,205 z M380"
+              ></path>
+            </g>
+          </g>
+          <g id="Dots5" class="dots-nav">
+            <g>
+              <path
+                class="dotsst dotsfill5"
+                style="fill: rgb(0, 146, 255); opacity: 1"
+                d="M335,315 c-3.3,0-6,3.7-6,6s2.7,6,6,6s6-3.7,6 -6 S 340,315, 335,315 z M335"
+              ></path>
+            </g>
+            <g>
+              <path
+                class="dotsstro5"
+                style="
+                  opacity: 1;
+                  fill: none;
+                  stroke: rgb(255, 255, 255);
+                  stroke-width: 3;
+                  stroke-miterlimit: 10;
+                "
+                d="M335,315 c-3.3,0-6,3.7-6,6s2.7,6,6,6s6-3.7,6 -6 S 340,315, 335,315 z M335"
+              ></path>
+            </g>
+          </g>
+          <g id="Dots6" class="dots-nav">
+            <g>
+              <path
+                class="dotsst dotsfill6"
+                style="fill: rgb(0, 146, 255); opacity: 1"
+                d="M210,375 c-3.3,0-6,3.7-6,6s2.7,6,6,6s6-3.7,6 -6 S 215,375, 210,375 z M210"
+              ></path>
+            </g>
+            <g>
+              <path
+                class="dotsstro6"
+                style="
+                  opacity: 1;
+                  fill: none;
+                  stroke: rgb(255, 255, 255);
+                  stroke-width: 3;
+                  stroke-miterlimit: 10;
+                "
+                d="M210,375 c-3.3,0-6,3.7-6,6s2.7,6,6,6s6-3.7,6 -6 S 215,375, 210,375 z M210"
+              ></path>
+            </g>
+          </g>
+          <g id="Dots7" class="dots-nav">
+            <g>
+              <path
+                class="dotsst dotsfill7"
+                style="fill: rgb(0, 146, 255); opacity: 1"
+                d="M88,324 c-3.3,0-6,3.7-6,6s2.7,6,6,6s6-3.7,6 -6 S 92,324, 88,324 z M88"
+              ></path>
+            </g>
+            <g>
+              <path
+                class="dotsstro7"
+                style="
+                  opacity: 1;
+                  fill: none;
+                  stroke: rgb(255, 255, 255);
+                  stroke-width: 3;
+                  stroke-miterlimit: 10;
+                "
+                d="M88,324 c-3.3,0-6,3.7-6,6s2.7,6,6,6s6-3.7,6 -6 S 92,324, 88,324 z M88"
+              ></path>
+            </g>
+          </g>
         </svg>
-        </div>
-        <!-- Message box -->
-        <div class="msg-box">
-            <i class="bi bi-chat-right-text-fill"></i>
-        </div>
-        <!-- Desktop view container starts from here -->
-        <!-- Container-1 -->
-        <div class="container-1">
-         <div class="left-side">
-        <!-- #6b21a8 -->
+      </div>
+      <!-- Message box -->
+      <div class="msg-box">
+        <i class="bi bi-chat-right-text-fill"></i>
+      </div>
+      <!-- Desktop view container starts from here -->
+      <!-- Container-1 -->
+      <div class="container-1 display-none">
+        <div class="left-side">
+          <!-- #6b21a8 -->
           <div class="primary-title">
-            <h1>25M+ Downloads</h1>
-            <p>on appstore & google playstore</p>
+            <h1 class="primary-title-ani">25M+ Downloads</h1>
+            <p class="primary-title-ani">on appstore & google playstore</p>
           </div>
           <div class="award-img">
-            <img src="./assets/mobile-app-of-the-year-by-entrepreneur.png" alt="mobile img">
+            <img
+              src="./assets/mobile-app-of-the-year-by-entrepreneur.png"
+              alt="mobile img"
+            />
           </div>
           <div class="secondary-title">
-            <h2>ABC 123</h2>
-            <p>we are the best web development company in the india</p>
+            <h2 class="secondary-title-ani">ABC 123</h2>
+            <p class="secondary-title-ani">
+              we are the best web development <br />
+              company in the india.
+            </p>
           </div>
           <div class="footer">
-        <div class="foot-left">
-            <div>View Case Study</div>
-        </div>
-        <div>SKIP</div>
+            <div class="foot-left">
+              <div>View Case Study</div>
+              <i class="bi bi-arrow-right"></i>
+            </div>
+            <div>SKIP</div>
           </div>
-         </div>
-         <div class="right-side">
-        <!-- #d4d4d8 -->
-            <img src="./assets/nexgtv-entertainment-mobile-app-development.png" class="nexgtv-1" alt="mobile one">
-            <img src="./assets/nexgtv-mobile-app-ui-design.png" class="nexgtv-2" alt="mobile two">
         </div>
+        <div class="right-side">
+          <!-- #d4d4d8 -->
+          <img
+            class="nexgtv"
+            src="./assets/nexgtv-entertainment-mobile-app-development.png"
+            class="nexgtv-1"
+            alt="mobile one"
+          />
+          <img
+            class="nexgtv"
+            src="./assets/nexgtv-mobile-app-ui-design.png"
+            class="nexgtv-3"
+            alt="mobile two"
+          />
         </div>
+      </div>
+
+      <!-- Container-2 -->
+      <div class="container-2 display-none">
+        <div class="left-side-2">
+          <div class="primary-title-2">
+            <p class="primary-title-ani-2">The Next Big</p>
+            <h1 class="primary-title-ani-2">Blockchain</h1>
+            <p class="primary-title-ani-2">The Next Big</p>
+          </div>
+          <div class="secondary-title-2">
+            <h2 class="secondary-title-ani-2">ABC 123</h2>
+            <p class="secondary-title-ani-2">
+              We are the best <br />
+              web development company<br />
+              in the world.
+            </p>
+          </div>
+          <div class="footer-2">
+            <div class="foot-left-2">
+              <div>View Case Study</div>
+              <i class="bi bi-arrow-right"></i>
+            </div>
+            <div>SKIP</div>
+          </div>
+        </div>
+        <div class="right-side-2">
+          <img
+            class="veme1"
+            src="./assets/veme-blockchain-app-developed.png"
+            alt="mobile one"
+          />
+          <img
+            class="veme2"
+            src="./assets/veme-app-ui-design.png"
+            alt="mobile two"
+          />
+        </div>
+      </div>
+
+      <!-- Container-3 -->
+      <div class="container-3 display-none">
+        <div class="left-side-3">
+          <div class="primary-title-3">
+            <p class="primary-title-ani-3">Powered by advance</p>
+            <img src="./assets/nasa-mobile-app.png" alt="" />
+            <p class="primary-title-ani-3">algorithms</p>
+          </div>
+          <div class="secondary-title-3">
+            <h2 class="secondary-title-ani-3">ABC 345</h2>
+            <p class="secondary-title-ani-3">
+              We are the best <br />
+              web development company<br />
+              in the world.
+            </p>
+          </div>
+          <div class="footer-3">
+            <div class="foot-left-3">
+              <div>View Case Study</div>
+              <i class="bi bi-arrow-right"></i>
+            </div>
+            <div>SKIP</div>
+          </div>
+        </div>
+        <div class="right-side-3">
+          <img
+            class="nasa1"
+            src="./assets/nasa-fitness-tracking-mobile-app.png"
+            alt="mobile one"
+          />
+          <img
+            class="nasa2"
+            src="./assets/measure-total-body-weight-through-fitness-app.png"
+            alt="mobile two"
+          />
+        </div>
+      </div>
+
+      <!-- Container-4 -->
+      <div class="container-4 display-none">
+        <div class="left-side-4">
+          <div class="primary-title-4">
+            <p class="primary-title-ani-4">Redefining</p>
+            <h1 class="primary-title-ani-4">UX Strategy</h1>
+            <p class="primary-title-ani-4">and UI design</p>
+          </div>
+          <div class="secondary-title-4">
+            <h2 class="secondary-title-ani-4">ABC 456</h2>
+            <p class="secondary-title-ani-4">
+              We are the best <br />
+              web development company<br />
+              in the world.
+            </p>
+          </div>
+          <div class="footer-4">
+            <div class="foot-left-4">
+              <div>View Case Study</div>
+              <i class="bi bi-arrow-right"></i>
+            </div>
+            <div>SKIP</div>
+          </div>
+        </div>
+        <div class="right-side-4">
+          <img class="pizza1" src="./assets/pizza_box.png" alt="" />
+          <img
+            class="pizza2"
+            src="./assets/domi-img1.png"
+            alt="mobile one"
+          />
+          <img
+            class="pizza3"
+            src="./assets/ux-strategy-for-mobile-app-devlopment.png"
+            alt="mobile two"
+          />
+          <img class="pizza4" src="./assets/dominos-bread.png" alt="" />
+          <img  class="pizza5" src="./assets/dominos-bread1.png" alt="" />
+        </div>
+      </div>
+
+      <!-- Container-4 -->
+
+      <div class="container-5">
+        <div class="left-side-5">
+          <div class="primary-title-5">
+            <p class="primary-title-ani-5">Text Headline</p>
+            <h1 class="primary-title-ani-5">Text Headline</h1>
+            <p class="primary-title-ani-5">footer Headline</p>
+          </div>
+          <div class="secondary-title-5">
+            <h2 class="secondary-title-ani-5">ABC 567</h2>
+            <p class="secondary-title-ani-5">
+              We are the best AR<br />
+              web development company<br />
+              in the world.
+            </p>
+          </div>
+          <div class="footer-5">
+            <div class="foot-left-5">
+              <div>View Case Study</div>
+              <i class="bi bi-arrow-right"></i>
+            </div>
+            <div>SKIP</div>
+          </div>
+        </div>
+        <div class="right-side-5">
+          <img class="karavan1" src="./assets/karavan-social-networking-app-screen.png" alt="" />
+          <img
+            class="karavan2"
+            src="./assets/social-networking-app-case-study.png"
+            alt="mobile one"
+          />
+          <img
+            class="karavan3"
+            src="./assets/developers-for-social-media-app.png"
+            alt="mobile two"
+          />
+          <img class="karavan4" src="./assets/karavan_2.png" alt="" />
+          <img  class="karavan5" src="./assets/karavan-social-networking-app-screen-2.png" alt="" />
+        </div>
+      </div>
+      <!-- main-container-close -->
     </div>
-    <script src="script.js"></script>
-</body>
+    <!-- Scroll animation library plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/CSSRulePlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    <!-- <script src="script.js"></script> -->
+  </body>
 </html>
